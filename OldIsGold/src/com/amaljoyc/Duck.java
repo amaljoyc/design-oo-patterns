@@ -1,10 +1,14 @@
 package com.amaljoyc;
 
 public class Duck {
-	Flyable flyable;
+	private Flyable flyable;
 
-	public Duck() {
-		flyable = new DoFly();
+	public void setFlyable(Flyable flyable) {
+		this.flyable = flyable;
+	}
+
+	public void performFly() {
+		this.flyable.fly();
 	}
 
 	public void swim() {
